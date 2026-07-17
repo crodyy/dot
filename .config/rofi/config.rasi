@@ -1,0 +1,10 @@
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    sidebar-mode: false;
+
+    display-drun: "";
+}
+
+@theme "~/.config/rofi/themes/glass.rasi"

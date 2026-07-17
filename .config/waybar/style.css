@@ -1,0 +1,95 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 0px;
+
+    font-family: "JetBrainsMono Nerd Font Propo", "sans-serif";
+    font-weight: bold;
+    font-size: 20px;
+
+    min-height: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces {
+    background-color: transparent;
+    padding: 0px 0px;
+}
+
+#workspaces button {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 4.3px 9.5px;
+    margin: 0px 5px;
+    border-radius: 999px;
+    color: transparent;
+    transition: all 0.3s linear;
+}
+
+#workspaces button.active {
+    background-color:rgba(255, 255, 255, 0.55);
+    color: transparent;
+    min-width: 48px;
+    transition: all 0.3s linear;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: transparent;
+    border-radius: 16px;
+    min-width: 45px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+
+#custom-mpris,
+#clock {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0 18px 0 18px;
+    margin: 0 0 0 16px;
+    border-radius: 999px;
+    font-size: 18px;
+    color: @foreground;
+}
+
+
+#battery,
+#pulseaudio,
+#network,
+#custom-notification,
+#tray {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0 18px 0 18px;
+    margin: 0 16px 0 0;
+    border-radius: 999px;
+    font-size: 18px;
+    color: @foreground;
+}
+
+#custom-mpris:hover,
+#window:hover,
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#battery:hover,
+#tray:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+#tray {
+    padding: 2px 10px;
+}
+
+#tray>.item image {
+    min-width: 16px;
+    min-height: 16px;
+}

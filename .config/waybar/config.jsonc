@@ -1,0 +1,152 @@
+{
+    "position": "top",
+    "margin-top": 8,
+    "modules-left": [
+        "clock",
+        "custom/mpris"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery",
+        "tray"
+        // "custom/notification"
+    ],
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a, %d %b}",
+        "tooltip": false
+    },
+    "custom/mpris": {
+        "exec": "~/.config/waybar/scripts/mpris.sh",
+        "interval": 2,
+        "return-type": "json",
+        "max-length": 25,
+        "min-length": 25,
+        "on-click": "playerctl play-pause",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": " ",
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ], // 2-5 on every monitor
+            "HDMI-A-1": [
+                1
+            ] // but only workspace 1 on HDMI-A-1
+        }
+    },
+    /*"tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },*/
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "󰂑",
+            "headset": "󰂑",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+    "network": {
+        "interface": "wlan0",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ifname} ",
+        //"format-disconnected": "", //An empty format will hide the module.
+        "format-disconnected": "",
+        "tooltip-format": "{ifname}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "tooltip": false
+    },
+    "battery": {
+        "interval": 60,
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "default": [
+                "󰂎",
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ],
+            "charging": [
+                "󰢟",
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ]
+        },
+        "tooltip": false
+    },
+    "tray": {
+        "spacing": 8,
+        "tooltip": false
+    }
+}
+/* "custom/notification": {
+        "tooltip": true,
+        "format": "<span size='16pt'>{icon}</span>",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "󰂜",
+            "dnd-notification": "󰂠",
+            "dnd-none": "󰪓",
+            "inhibited-notification": "󰂛",
+            "inhibited-none": "󰪑",
+            "dnd-inhibited-notification": "󰂛",
+            "dnd-inhibited-none": "󰪑"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    } */
