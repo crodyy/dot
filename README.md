@@ -1,11 +1,11 @@
-# Dotfiles (Hyprland Setup)
+# DOT
 
 ![Main Screenshot](./Screenshots/Screenshot5.png)
 
 
 ## Dependencies / Prerequisites
 
-Install these packages first (they are used in the configs/scripts):
+### packages :
 
 - hyprland
 - hyprland-lua
@@ -14,33 +14,48 @@ Install these packages first (they are used in the configs/scripts):
 - hyprlock
 - hyprshot
 - hyprshade
+  
 - waybar
 - rofi
 - mako
+  
 - kitty
 - zsh
 - oh-my-zsh
 - powerlevel10k
+  
+- yazi
 - nautilus
 - vscodium
+  
 - wl-clipboard (`wl-copy`, `wl-paste`)
 - cliphist
+  
 - playerctl
 - pavucontrol
 - wireplumber (`wpctl`)
 - brightnessctl
-- pywal (`wal`)
 - libnotify (`notify-send`)
+  
+- pywal (`wal`)
+
 - eza/exa
 - fastfetch
 - tty-clock
+  
 - Bibata cursor theme
 - GeistMono Nerd Font Mono
 
-If you are on Arch, `yay`/`pacman` can be used to install most of them.
+on Arch, `yay`/`pacman` can be used to install most of them.
 
-## More Screenshots
-
-![Screenshot 1](./Screenshots/Screenshot1.png)  ![Screenshot 2](./Screenshots/Screenshot2.png)
-![Screenshot 3](./Screenshots/Screenshot3.png)  ![Screenshot 4](./Screenshots/Screenshot4.png)
-
+### Screenshots
+>
+> Theme colors are generated using `pywal`.
+<p align="center">
+  <img src="Screenshots/Screenshots1.png" alt="Wallpaper 1" width="49%" />
+  <img src="Screenshots/Screenshots2.png" alt="Wallpaper 2" width="49%" />
+</p>
+<p align="center">
+  <img src="Screenshots/Screenshots3.png" alt="Wallpaper 3" width="49%" />
+  <img src="Screenshots/Screenshots4.png" alt="Wallpaper 4" width="49%" />
+</p>
