@@ -2,8 +2,6 @@
 
 ![Main Screenshot](./Screenshots/Screenshot5.png)
 
-This repo contains my Linux desktop dotfiles.
-It is focused on a Hyprland setup with Waybar, Rofi, Kitty, and Zsh.
 
 ## Dependencies / Prerequisites
 
@@ -43,7 +41,6 @@ If you are on Arch, `yay`/`pacman` can be used to install most of them.
 
 ## More Screenshots
 
-![Screenshot 1](./Screenshots/Screenshot1.png)
-![Screenshot 2](./Screenshots/Screenshot2.png)
-![Screenshot 3](./Screenshots/Screenshot3.png)
-![Screenshot 4](./Screenshots/Screenshot4.png)
+![Screenshot 1](./Screenshots/Screenshot1.png)  ![Screenshot 2](./Screenshots/Screenshot2.png)
+![Screenshot 3](./Screenshots/Screenshot3.png)  ![Screenshot 4](./Screenshots/Screenshot4.png)
+
