@@ -52,10 +52,10 @@ on Arch, `yay`/`pacman` can be used to install most of them.
 >
 > Theme colors are generated using `pywal`.
 <p align="center">
-  <img src="Screenshots/Screenshots1.png" alt="Wallpaper 1" width="49%" />
-  <img src="Screenshots/Screenshots2.png" alt="Wallpaper 2" width="49%" />
+  <img src="Screenshots/Screenshot1.png" alt="Wallpaper 1" width="49%" />
+  <img src="Screenshots/Screenshot2.png" alt="Wallpaper 2" width="49%" />
 </p>
 <p align="center">
-  <img src="Screenshots/Screenshots3.png" alt="Wallpaper 3" width="49%" />
-  <img src="Screenshots/Screenshots4.png" alt="Wallpaper 4" width="49%" />
+  <img src="Screenshots/Screenshot3.png" alt="Wallpaper 3" width="49%" />
+  <img src="Screenshots/Screenshot4.png" alt="Wallpaper 4" width="49%" />
 </p>
